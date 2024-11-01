@@ -1,0 +1,20 @@
+{
+	"${1:ClassName} Class": {
+		"prefix": "vwm",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"import '../../../core/base/viewmodel/base_view_model.dart';",
+			"",
+			"class ${1:ClassName} extends BaseViewModel with ChangeNotifier {",
+			"  @override",
+			"  void init() {",
+			"  }",
+			"",
+			"  @override",
+			"  void setContext(BuildContext context) => myContext = context;",
+			"}"
+		],
+		"description": "${1:ClassName} class extending BaseViewModel"
+	}
+}

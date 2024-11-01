@@ -1,0 +1,12 @@
+{
+	"BaseModel Class": {
+		"prefix": "bmd",
+		"body": [
+			"abstract class BaseModel<T> {",
+			"  Map<String, Object?> toJson();",
+			"  T fromJson(Map<String, dynamic> json);",
+			"}"
+		],
+		"description": "BaseModel abstract class for JSON serialization"
+	}
+}

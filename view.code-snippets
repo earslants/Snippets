@@ -1,0 +1,36 @@
+{
+	"${1:NavigationView} Class": {
+		"prefix": "viw",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"import '../../../core/base/view/base_view.dart';",
+			"",
+			"class ${1:NavigationView} extends StatefulWidget {",
+			"  const ${1:NavigationView}({super.key});",
+			"",
+			"  @override",
+			"  State<${1:NavigationView}> createState() => _${1:NavigationView}State();",
+			"}",
+			"",
+			"class _${1:NavigationView}State extends State<${1:NavigationView}> {",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return BaseView<${2:ViewModel}>(",
+			"      viewModel: ${2:ViewModel}(),",
+			"      onModelReady: (${2:ViewModel} model) {",
+			"        model.setContext(context);",
+			"        model.init();",
+			"      },",
+			"      onPageBuilder: (BuildContext context, ${2:ViewModel} viewModel) =>",
+			"          buildPage(context, viewModel),",
+			"    );",
+			"  }",
+			"}",
+			"",
+			"Widget buildPage(BuildContext context, ${2:ViewModel} viewModel) {",
+			"  return const Scaffold();",
+			"}"
+		],
+		"description": "${1:NavigationView} class with user-defined view model"
+	}
+}
